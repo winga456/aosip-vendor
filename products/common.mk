@@ -24,27 +24,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-ifneq ($(filter aosip_angler aosip_bullhead aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_angler aosip_bullhead aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk \
     CellBroadcastReceiver
 endif
 
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 # Camera Effects
 PRODUCT_COPY_FILES +=  \
     vendor/aosip/proprietary/common/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/aosip/proprietary/common/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     libdrmclearkeyplugin 
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
