@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     CustomWallpapers \
     OmniJaws \
+    OmniSwitch \
     OmniStyle
 
 PRODUCT_COPY_FILES += \
