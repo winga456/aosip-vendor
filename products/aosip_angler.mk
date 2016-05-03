@@ -12,7 +12,7 @@ PRODUCT_MODEL := Nexus 6P
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MHC19Q/2705526:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0.1 MHC19Q 2705526 release-keys" \
-    BUILD_ID=MHC19Q \
-    BUILD_DISPLAY_ID=MHC19Q
+    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MTC19T/2741993:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 6.0.1 MTC19T 2741993 release-keys" \
+    BUILD_ID=MTC19T \
+    BUILD_DISPLAY_ID=MTC19T
