@@ -59,7 +59,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
 PRODUCT_PACKAGES += \
     Busybox \
     LockClock \
-    CustomWallpapers \
     OmniJaws \
     OmniSwitch \
     OmniStyle
