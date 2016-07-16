@@ -58,13 +58,17 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox \
+    KernelAdiutor \
+    Eleven \
     LockClock \
+    ViPER4Android \
     OmniJaws \
     OmniSwitch \
     OmniStyle
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
+    vendor/aosip/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor.apk
 
 # Theme engine
 include vendor/aosip/config/themes_common.mk
